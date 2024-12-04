@@ -1,0 +1,49 @@
+@model IEnumerable<Cafeteria.Models.Order>
+
+@{
+    ViewData["Title"] = "Orders Records";
+}
+
+<h2>Order Records</h2>
+<br/>
+
+<p>
+    <a asp-action="Create" class="custom-button">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                Order Date
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeStamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="custom-button-mini">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" class="custom-button-mini" style="border-color: black;">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="custom-button-mini" style="border-color: red;">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

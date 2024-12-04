@@ -4,20 +4,21 @@
     ViewData["Title"] = "Stock Manager";
 }
 
-<h1>Stock Manager - Cafeteria</h1>
+<h2>Stock Manager - Cafeteria</h2>
 
+<br/>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="custom-button">Create New</a>
 </p>
 
 <form asp-controller="Products" asp-action="Index" method="get">
     <p>
-        <select asp-for="ProductCategory" asp-items="Model.Categories">
+        <select asp-for="ProductCategory" class="custom-dropDown" style="border-color: black;" asp-items="Model.Categories">
             <option value="">All</option>
         </select>
 
-        <label>Name: <input type="text" name="searchString" /></label>
-        <input type="submit" value="Filter" />
+        <label>Name: <input type="text" name="searchString" style="border-radius: 10px; padding: 5px; padding-left: 10px; padding-right: 10px;"/></label>
+        <input type="submit" value="Filter" class="custom-button-mini"/>
     </p>
 </form>
 
@@ -55,9 +56,9 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="custom-button-mini">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" class="custom-button-mini" style="border-color: black;">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="custom-button-mini" style="border-color: red;">Delete</a>
             </td>
         </tr>
 }
