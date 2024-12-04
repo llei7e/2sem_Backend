@@ -8036,11 +8036,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\snluc\\Projetos\\Senai\\backend\\2sem_Backend\\WebAppCafeteria\\Cafeteria\\Cafeteria.csproj",
+      "projectUniqueName": "C:\\Users\\snluc\\Projetos\\Senai\\2sem_Backend\\WebAppCafeteria\\Cafeteria\\Cafeteria.csproj",
       "projectName": "Cafeteria",
-      "projectPath": "C:\\Users\\snluc\\Projetos\\Senai\\backend\\2sem_Backend\\WebAppCafeteria\\Cafeteria\\Cafeteria.csproj",
+      "projectPath": "C:\\Users\\snluc\\Projetos\\Senai\\2sem_Backend\\WebAppCafeteria\\Cafeteria\\Cafeteria.csproj",
       "packagesPath": "C:\\Users\\snluc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\snluc\\Projetos\\Senai\\backend\\2sem_Backend\\WebAppCafeteria\\Cafeteria\\obj\\",
+      "outputPath": "C:\\Users\\snluc\\Projetos\\Senai\\2sem_Backend\\WebAppCafeteria\\Cafeteria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\snluc\\AppData\\Roaming\\NuGet\\NuGet.Config"
