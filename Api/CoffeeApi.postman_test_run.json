@@ -1,0 +1,152 @@
+{
+	"id": "7fce274f-6692-45fe-bb83-4066e05483ef",
+	"name": "CoffeeApi",
+	"timestamp": "2024-12-11T20:08:08.367Z",
+	"collection_id": "20666690-51ced67d-3bfa-4a04-919d-c09bbdb5870a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-12-11T20:08:07.538Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0b2a8481-0135-4de3-b864-b98ae8e5eca9",
+			"name": "Get_All",
+			"url": "http://localhost:5070/api/Products",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 (OK)": true,
+				"Body includes string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 (OK)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body includes string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200 (OK)": true,
+					"Body includes string": true
+				}
+			]
+		},
+		{
+			"id": "4e7accc5-ae19-4e80-9864-faf0434f5e1a",
+			"name": "Create_new_product",
+			"url": "http://localhost:5070/api/Products",
+			"time": 14,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201 (Created)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201 (Created)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 201 (Created)": true
+				}
+			]
+		},
+		{
+			"id": "a1701ea4-2fb1-4496-b394-8341baa64d56",
+			"name": "Delete_product(Success)",
+			"url": "http://localhost:5070/api/Products/18",
+			"time": 43,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204 (No Content)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204 (No Content)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Status code is 204 (No Content)": true
+				}
+			]
+		},
+		{
+			"id": "cf2d8b93-f148-4597-9373-ebcd9221c3c7",
+			"name": "Delete_product(Fail)",
+			"url": "http://localhost:5070/api/Products/100",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404 (Not Found)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404 (Not Found)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 404 (Not Found)": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 73,
+	"collection": {
+		"requests": [
+			{
+				"id": "0b2a8481-0135-4de3-b864-b98ae8e5eca9",
+				"method": "GET"
+			},
+			{
+				"id": "4e7accc5-ae19-4e80-9864-faf0434f5e1a",
+				"method": "POST"
+			},
+			{
+				"id": "a1701ea4-2fb1-4496-b394-8341baa64d56",
+				"method": "DELETE"
+			},
+			{
+				"id": "cf2d8b93-f148-4597-9373-ebcd9221c3c7",
+				"method": "DELETE"
+			}
+		]
+	}
+}
